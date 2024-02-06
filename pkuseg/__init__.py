@@ -89,6 +89,7 @@ class Preprocesser:
                 c = txt[j]
                 if not c in now.children and last_word_idx != -1:
                     found = True
+                    j = last_word_idx + 1
                     break
                 if not c in now.children and last_word_idx == -1:
                     break
